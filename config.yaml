@@ -1,0 +1,23 @@
+name: LLM
+
+training:
+  model-name: Bert
+  data-name: EMOTION
+  n-block: 12
+  use-pretrained: true
+  pretrained-model-name: bert-base-cased
+  epochs: 10
+  num-sample: 700
+  random-seed: 1
+  eval-every-epoch: true
+  load-path: null
+  save-path: bert_pretrain.pth
+
+learning:
+  learning-rate: 0.00001
+  weight-decay: 0.01
+  batch-size: 2
+  clip-grad-norm: 0.0
+
+log_path: .
+debug_mode: true
